@@ -5,15 +5,21 @@
 }
 
 body {
-    width: 650px;
-    height: 650px;
+    width: 649px;
+    height: 649px;
     max-width: 650px;
     max-height: 650px;
     margin: auto;
     position: relative;
     background: #CAE6CE;
+    display: flex;
+    align-items: center;
 }
 
+img{
+margin: auto;
+    transform: rotate(-45deg);
+}
 .boxes__break-point {
     width: 100px;
     height: 100px;
@@ -24,10 +30,9 @@ body {
 }
 
 .boxes__break-point-title {
-    word-wrap: break-word;
     flex: 0.5;
     transform: rotate(45deg);
-
+    font-size: 0.6rem;
 }
 
 .boxes {
@@ -40,6 +45,7 @@ body {
 .top-boxes {
     transform: rotate(180deg);
     right: 0;
+    top: 0;
 }
 
 .left-boxes {
@@ -105,3 +111,59 @@ body {
     background: red;
 }
 
+.boxes__box--orange:before {
+     background: orange;
+ }
+
+.boxes__box--pink:before {
+    background: deeppink;
+}
+
+.boxes__box--blue:before {
+    background: deepskyblue;
+}
+
+.boxes__box--brown:before {
+    background: saddlebrown;
+}
+
+.boxes__box--dark-blue:before {
+    background: blue;
+}
+
+.boxes__box--green:before {
+    background: green;
+}
+
+.boxes__break-point--jail:before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: orange;
+    right: 0;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.boxes__break-point-title--just, .boxes__break-point-title--visiting{
+    position: absolute;
+    font-size: 0.6rem;
+}
+
+.boxes__break-point-title--just{
+    left: 0;
+    top: 20%;
+    transform: rotate(90deg);
+
+}
+
+.boxes__break-point-title--visiting{
+    bottom: 0;
+    right: 10%;
+}
+@media (max-width: 600px) {
+  body{
+
+  }
+}
