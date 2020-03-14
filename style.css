@@ -1,3 +1,8 @@
+
+html {
+    font-size: 120%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,24 +10,24 @@
 }
 
 body {
-    width: 649px;
-    height: 649px;
-    max-width: 650px;
-    max-height: 650px;
+    width: 40.625em;
+    height: 40.625em;
     margin: auto;
     position: relative;
     background: #CAE6CE;
     display: flex;
-    align-items: center;
 }
 
-img{
-margin: auto;
+
+img {
+    margin: auto;
     transform: rotate(-45deg);
+    width: 15em;
 }
+
 .boxes__break-point {
-    width: 100px;
-    height: 100px;
+    width: 6.25em;
+    height: 6.25em;
     border: 2px solid black;
     display: flex;
     justify-content: center;
@@ -67,8 +72,8 @@ margin: auto;
 
 .boxes__box {
     border: 2px solid black;
-    width: 50px;
-    height: 100px;
+    width: 3.125em;
+    height: 6.25em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -112,8 +117,8 @@ margin: auto;
 }
 
 .boxes__box--orange:before {
-     background: orange;
- }
+    background: orange;
+}
 
 .boxes__box--pink:before {
     background: deeppink;
@@ -135,7 +140,7 @@ margin: auto;
     background: green;
 }
 
-.boxes__break-point--jail:before{
+.boxes__break-point--jail:before {
     content: '';
     position: absolute;
     width: 70%;
@@ -146,24 +151,45 @@ margin: auto;
     border-bottom: 2px solid black;
 }
 
-.boxes__break-point-title--just, .boxes__break-point-title--visiting{
+.boxes__break-point-title--just, .boxes__break-point-title--visiting {
     position: absolute;
     font-size: 0.6rem;
 }
 
-.boxes__break-point-title--just{
+.boxes__break-point-title--just {
     left: 0;
     top: 20%;
     transform: rotate(90deg);
 
 }
 
-.boxes__break-point-title--visiting{
+.boxes__break-point-title--visiting {
     bottom: 0;
     right: 10%;
 }
-@media (max-width: 600px) {
-  body{
 
-  }
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 40%;
+    }
 }
